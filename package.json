@@ -1,0 +1,24 @@
+{
+  "name": "carusto-web-api",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datso/carusto-web-api.git"
+  },
+  "nativePackage": true,
+  "description": "Carusto WEB API",
+  "author": {
+    "name": "Vadim Ruban",
+    "email": "vadim.ruban@carusto.com"
+  },
+  "homepage": "https://github.com/datso/carusto-web-api",
+  "keywords": [
+    "carusto"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.30.0"
+  },
+  "bugs": {
+    "url": "https://github.com/datso/carusto-web-api/issues"
+  }
+}
