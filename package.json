@@ -15,9 +15,6 @@
   "keywords": [
     "carusto"
   ],
-  "peerDependencies": {
-    "react-native": ">=0.30.0"
-  },
   "bugs": {
     "url": "https://github.com/datso/carusto-web-api/issues"
   }
