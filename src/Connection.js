@@ -4,7 +4,7 @@ import {
     JSJaCPresence,
     JSJaCWebSocketConnection,
     JSJaCHttpBindingConnection
-} from '../include/jsjac';
+} from './jsjac';
 
 import Observable from './Observable';
 

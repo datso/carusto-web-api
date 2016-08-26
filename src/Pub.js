@@ -1,6 +1,6 @@
 'use strict';
 
-import {JSJaCIQ} from '../include/jsjac';
+import {JSJaCIQ} from './jsjac';
 import {proxyIq, nodeValue} from './Utils';
 import Observable from './Observable';
 

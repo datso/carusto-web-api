@@ -1,5 +1,5 @@
 import Observable from './Observable';
-import {JSJaCIQ} from '../include/jsjac';
+import {JSJaCIQ} from './jsjac';
 
 var NS_AC = "urn:carusto:ac";
 var NS_AC_RESOURCE = "urn:carusto:ac:resource";

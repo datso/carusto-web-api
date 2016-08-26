@@ -1,6 +1,6 @@
 'use strict';
 
-import {JSJaCPacket, JSJaCIQ} from '../include/jsjac';
+import {JSJaCPacket, JSJaCIQ} from './jsjac';
 
 var NS_REST = "urn:carusto:rest";
 

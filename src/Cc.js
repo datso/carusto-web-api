@@ -1,5 +1,5 @@
 import Observable from './Observable';
-import {JSJaCIQ} from '../include/jsjac';
+import {JSJaCIQ} from './jsjac';
 
 var NS_CC = "urn:carusto:cc";
 var NS_CALL = "urn:carusto:cc:call";

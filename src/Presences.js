@@ -1,5 +1,5 @@
 import Observable from './Observable';
-import {JSJaCIQ, JSJaCPresence, JSJaCPacket} from '../include/jsjac';
+import {JSJaCIQ, JSJaCPresence, JSJaCPacket} from './jsjac';
 
 var NS_PRESENCE = "urn:carusto:presence";
 

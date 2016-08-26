@@ -1,17 +1,17 @@
 'use strict';
 
-import {createRestPacket, createRestHandler} from './src/Rest';
+import {createRestPacket, createRestHandler} from './Rest';
 
-import Connection from './src/Connection';
-import {Pub, PubSubEvent, PubSubNode, PubSubItem} from './src/Pub';
-import {Ac, Registration, Call, CallResource, CallMineResource} from './src/Ac'
-import {Cc, Queue, QueueCall, QueueCallFlow} from './src/Cc';
-import {Conferences, Conference, ConferencePresence, ConferenceParticipant, ConferenceMessage} from './src/Conferences';
-import {Contacts, Contact, ContactProperty, Tag, Colleague, Tel, Group, FolderParticipant, Folder} from './src/Contacts';
-import {Conversations, Message} from './src/Conversations';
-import {Native, SoftPhoneCall} from './src/Native';
-import {Presences, Presence} from './src/Presences';
-import {Settings} from './src/Settings';
+import Connection from './Connection';
+import {Pub, PubSubEvent, PubSubNode, PubSubItem} from './Pub';
+import {Ac, Registration, Call, CallResource, CallMineResource} from './Ac'
+import {Cc, Queue, QueueCall, QueueCallFlow} from './Cc';
+import {Conferences, Conference, ConferencePresence, ConferenceParticipant, ConferenceMessage} from './Conferences';
+import {Contacts, Contact, ContactProperty, Tag, Colleague, Tel, Group, FolderParticipant, Folder} from './Contacts';
+import {Conversations, Message} from './Conversations';
+import {Native, SoftPhoneCall} from './Native';
+import {Presences, Presence} from './Presences';
+import {Settings} from './Settings';
 
 Connection.addPlugin("pub", Pub);
 Connection.addPlugin("ac", Ac);

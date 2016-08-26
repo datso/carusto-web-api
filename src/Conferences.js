@@ -1,5 +1,5 @@
 import Observable from './Observable';
-import {JSJaCIQ, JSJaCMessage} from '../include/jsjac';
+import {JSJaCIQ, JSJaCMessage} from './jsjac';
 import {createRestPacket, createRestHandler} from './Rest';
 import {Colleague, Tel} from './Contacts'
 import {text, nodeValue, color} from './Utils';
