@@ -18,10 +18,10 @@ export function proxy(callback, scope) {
 export function proxyIq(callback, scope) {
     return {
         error_handler: function(iq) {
-            callback.call(scope, carusto.Response.fromErrorIq(iq));
+            callback.call(scope, Response.fromErrorIq(iq));
         },
         result_handler: function(iq) {
-            callback.call(scope, carusto.Response.fromResultIq(iq));
+            callback.call(scope, Response.fromResultIq(iq));
         }
     }
 };
@@ -121,7 +121,7 @@ Response.fromResultIq = function(iq) {
     var responses = node.getElementsByTagName("response");
 
     if (responses.length > 0) {
-        result._data = carusto.nodeValue(responses.item(0));
+        result._data = nodeValue(responses.item(0));
 
         try {
             result._json = JSON.parse(result._data);
