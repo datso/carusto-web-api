@@ -6,7 +6,8 @@
     "url": "git+https://github.com/datso/carusto-web-api.git"
   },
   "scripts": {
-    "build": "babel ./src/ --presets babel-preset-es2015 --out-dir distribution",
+    "build": "babel ./src/ --out-dir distribution",
+    "node-example": "babel-node ./examples/node_client_connection.js",
     "prepublish": "npm run build"
   },
   "nativePackage": true,
@@ -25,6 +26,13 @@
   "main": "./distribution/index.js",
   "devDependencies": {
     "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0"
+    "babel-preset-es2015": "^6.14.0",
+    "es6-event-emitter": "^1.5.2",
+    "event-emitter-es6": "^1.1.5"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.4",
+    "js-base64": "^2.1.9",
+    "sockjs-client": "^1.1.1"
   }
 }
