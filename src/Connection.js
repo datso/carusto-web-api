@@ -44,7 +44,7 @@ export class Connection extends EventEmitter {
         this._con = false;
         this._conId = false;
         this._conClient = false;
-        this._conUrl = "http://" + host + ':8080/stomp?auth=' + auth; // TODO: Add proxy instead of 8080 port
+        this._conUrl = host ? "http://" + host + '/stomp?auth=' + auth : '/stomp?auth=' + auth;
         this._conReconnect = false;
         this._connected = false;
         this._connecting = false;
@@ -129,6 +129,39 @@ export class Connection extends EventEmitter {
      */
     getStompClient() {
         return this._conStompClient;
+    }
+
+    // ============================================================
+    // STOMP actions
+    // ============================================================
+
+    /**
+     * TODO
+     */
+    send(destination, headers, body) {
+        if (!this._connected) {
+            throw new Error("Could not send message to \""+ destination +"\", not connected");
+        }
+
+        return this.getStompClient().send(destination, headers, body);
+    }
+
+    /**
+     * TODO
+     */
+      subscribe(destination, callback, headers) {  
+        if (!this._connected) {
+            throw new Error("Could not subscribe to \""+ destination +"\", not connected");
+        }
+
+        return this.getStompClient().subscribe(destination, callback, headers);
+    }
+
+    /**
+     * TODO
+     */
+    unsubscribe(id) {
+        return this.getStompClient().unsubscribe(destination);
     }
 
     // ============================================================
